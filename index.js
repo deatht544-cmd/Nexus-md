@@ -111,7 +111,7 @@ async function startBot() {
 
             // ❤️ AUTO CHAT REACT
             if (!isCmd && !msg.key.fromMe && currentSettings.auto_chat_react) {
-                const emojis = ['❤️', '🔥', '✨', '💯', '👾'];
+                const emojis = ['🐦‍🔥', '💞', '🛸', '🍁', '❤️‍🔥'];
                 const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
                 await socket.sendMessage(from, { react: { text: randomEmoji, key: msg.key } });
             }
